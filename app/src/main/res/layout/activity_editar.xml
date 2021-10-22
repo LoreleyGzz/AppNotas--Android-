@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    tools:context=".EditarActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:fontFamily="@font/abel"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="invisible"
+        android:fontFamily="@font/abel"
+        android:textSize="35dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/Titulo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_borde_editext"
+                android:font="@font/abel"
+                android:fontFamily="@font/abel"
+                android:text="Este es el titulo"
+                android:textSize="20dp"
+                android:maxLength="30"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/style_borde_editext"
+            android:ems="10"
+            android:fontFamily="@font/abel"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Este es un texto"
+            android:textSize="16dp"
+            android:autoLink="web"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
